@@ -13,7 +13,7 @@
         </ul>
         <!-- 推荐 -->
         <ul class="products">
-            <li v-for="p  in getProducts(6)" :key="p .id">
+            <li v-for="p  in getProducts(8)" :key="p .id">
                 <div class="imgs"><img :src="p.photo" alt="" height="70px" width="70px"></div>
                 <div>{{p.name}}</div>
             </li>
@@ -94,7 +94,7 @@ export default {
   float: left;
   height: 80px;
   border: 1px solid#04bfa6;
-  border-radius: 3px;
-  margin: 8px 0 0px 27px;
+  border-radius: 11px;
+  margin: 8px 0 0px 4px;
 }
 </style>

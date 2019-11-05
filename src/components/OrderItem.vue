@@ -17,7 +17,8 @@
       <van-col :span="4">
         <button v-if="data.status == '待确认'">完成</button>
         <button v-else-if="data.status == '待服务'" >取消</button>
-
+        <button v-else-if="data.status == '待派单'" >取消</button>
+        <button v-else-if="data.status == '待接单'" >取消</button>
       </van-col>
     </van-row>
     <div class="text-right">

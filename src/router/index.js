@@ -5,7 +5,10 @@ import Manager from '../pages/manager/Layout.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  
+  {
+    path:'/',
+    redirect:"/login"
+  },
   {
     path: '/manager',
     name: 'manager',
@@ -46,7 +49,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

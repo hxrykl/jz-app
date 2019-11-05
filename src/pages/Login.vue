@@ -1,7 +1,7 @@
 <template>
     <div class="login">
-        <div class="header">
-            家政服务平台-顾客端
+        <div class="header" style="font-size:18px;color:#fff;">
+            校园帮帮帮平台-用户端
         </div>
         <div class="form">
             <van-cell-group>
@@ -22,7 +22,7 @@
                 />
             </van-cell-group>
             <div class="btn">
-                <van-button size="small" color="linear-gradient(to right, #4bb0ff, #6149f6)" @click="loginHandler">登陆</van-button>
+                <van-button style="border-radius:20px;width:100px;" size="normal" plain type="primary" @click="loginHandler">登陆</van-button>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@ export default {
 <style scoped>
     .header {
         height: 170px;
-        background-color:aqua;
+        background-color:#04bfa6;
         text-align: center;
         line-height: 170px
         

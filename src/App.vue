@@ -6,7 +6,7 @@
 <script>
 export default {
   created(){
-    this.$router.push({path:'./manager/home'})
+    // this.$router.push({path:'./manager/order'})
   }
 }
 </script>

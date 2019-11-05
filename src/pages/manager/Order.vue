@@ -1,6 +1,6 @@
 <template>
   <div class="order">
-    <van-nav-bar title="我的订单" style="background-color:#04bfa6;"/>
+    <van-nav-bar title="我的订单" style="background-color:#04bfa6;position:fixed;width:100% ;"/>
     <van-tabs v-model="active">
       <van-tab title="全部">
         <briup-order-item v-for='order in orders' :key="order.id"  :data='order'></briup-order-item>
@@ -44,7 +44,14 @@ export default {
 </script>
 <style scoped>
 .van-tabs {
-  padding-bottom: 50px;
+  padding:50px 0 46px;
+}
+ .van-tabs__content {
+  padding-top: 43px;
+}
+ .van-tabs__wrap {
+  position: fixed;
+  width: 100%;
 }
 .order {
   background: #f1f1f1;
